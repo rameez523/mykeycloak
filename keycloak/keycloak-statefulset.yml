@@ -64,7 +64,13 @@ spec:
         - containerPort: 8443
           name: https
           protocol: TCP
-        resources: {}
+        resources:
+          limits:
+            cpu: "1"
+            memory: 2000Mi
+          requests:
+            cpu: 500m
+            memory: 1000Mi
         securityContext:
           runAsNonRoot: true
           runAsUser: 1000
