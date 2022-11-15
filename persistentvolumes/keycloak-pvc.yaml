@@ -1,0 +1,12 @@
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: keycloak-pvc
+  namespace: keycloak
+spec:
+  accessModes:
+  - ReadWriteOnce
+  storageClassName: my-local-storage
+  resources:
+    requests:
+      storage: 20Gi
