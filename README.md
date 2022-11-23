@@ -40,6 +40,14 @@ command:- kubectl create -f mykeycloak/keycloak/ -n keycloak
 
 
 
+6. Access it using NodePort:-
+
+On Web Browser  ===>>>  192.168.18.22:30002
+
+username: admin
+password: admin
+
+
 
 conclusion
 So we successfully deployed Keycloak on kubernetes. If you want to migrate form H2 database to postgres database to persist all data.
